@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navitas GPS Car Tracker</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: yellow;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      max-width: 300px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-details {
+      padding: 15px;
+    }
+
+    .product-details h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .product-details p {
+      margin: 10px 0;
+      color: #666;
+    }
+
+    .button {
+      background-color: #0077b6;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background-color: #005f87;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0077b6;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Navitas GPS Car Tracker</h1>
+  <p>Your one-stop shop for vehicle GPS tracking solutions</p>
+</header>
+
+<div class="container">
+  <!-- Voice GPS Tracker -->
+  <div class="product" id="voice-tracker">
+    <img src="voice-gps.jpg.jpg" 
+    width="300px" height="70px">
+    <div class="product-details">
+      <h3>Voice GPS Tracker</h3>
+      <p>Stay connected and get voice-guided navigation in your vehicle.
+        Sale Price of Voice GPS tracker is 900.00 and with installation 1,200.00
+      </p>
+      <button class="button" onclick="showDetails('Voice GPS Tracker')">View Details</button>
+    </div>
+  </div>
+
+  <!-- Non-Voice GPS Tracker -->
+  <div class="product" id="non-voice-tracker">
+    <img src="non-voice-gps.jpg.jpg"
+    width="300px" height="300px">
+    <div class="product-details">
+      <h3>Non-Voice GPS Tracker</h3>
+      <p>Efficient, silent GPS tracking for all your vehicles.
+        Sale Price of Non-Voice GPS tracker is 700.00 and with installation 900.00
+      </p>
+      <button class="button" onclick="showDetails('Non-Voice GPS Tracker')">View Details</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2024 Navitas GPS Car Tracker. All Rights Reserved.
+  <br> Contact us: <span style="text-decoration:
+  underline;">0257494159 / 0532964212</span>
+</footer>
+
+<script>
+  function showDetails(product) {
+    alert('Contact Us on 0257494159 / 0532964212 for either your GPS tracker or your GPS tracker installation');
+  }
+</script>
+
+</body>
+</html>
